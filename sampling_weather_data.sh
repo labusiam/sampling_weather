@@ -19,5 +19,5 @@ cat data/KJAX_sliced.csv | sample -r 0.2 > data/KJAX_sampled.csv
 if [ ! -d log ]; then
 	mkdir log
 	touch log/log
-else
+fi
 
