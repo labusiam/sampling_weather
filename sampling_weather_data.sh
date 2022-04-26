@@ -17,3 +17,7 @@ csvcut -c 1,2,3,4 ./data/KJAX.csv | csvgrep 2014 > data/KJAX_sliced.csv
 # Sampling Data
 cat data/KJAX_sliced.csv | sample -r 0.2 > data/KJAX_sampled.csv
 
+if [ ! -d history ]; then
+	mkdir history
+	touch history/loh
+fi
