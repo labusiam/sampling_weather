@@ -11,7 +11,6 @@ else
 fi
 
 # Seleksi Data berdasarkan kolom
-
 csvcut -c 1,2,3,4 ./data/KJAX.csv | csvgrep 2014 > data/KJAX_sliced.csv 
 
 # Sampling Data
